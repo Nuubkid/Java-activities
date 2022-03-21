@@ -1,0 +1,14 @@
+    DefaultListModel mylist = new DefaultListModel();
+    String [] Drinks = {"Iced Coffe","Iced Cappucinno","Iced Mocha","Iced Latte","Iced Tea","Chilled Milk","Coffe Float","Choco Smoothie"};
+    public remopve() {
+        initComponents();
+    
+        for(int i = 0 ; i < Drinks.length;i++){
+        mylist.addElement(Drinks[i]);
+        this.list.setModel(mylist);
+        }
+    }
+    =======REMOVE BUTTON=======
+    
+    
+    mylist.removeElementAt(list.getSelectedIndex());
