@@ -1,0 +1,16 @@
+ private void determineActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        String vowel = this.textfield1.getText();
+        
+       if(vowel.equals("a")||vowel.equals("A")){
+           this.textfield2.setText("Vowel!");
+       } else if(vowel.equals("e")|| vowel.equals("E")){
+           this.textfield2.setText("Vowel!");
+       }else if(vowel.equals("i")||vowel.equals("I")){
+           this.textfield2.setText("Vowel!");
+       }else if (vowel.equals("o")|| vowel.equals("O")){
+           this.textfield2.setText("Vowel");
+       }else if(vowel.equals("u")|| vowel.equals("U")){
+           this.textfield2.setText("Vowel");
+       }else {
+           this.textfield2.setText("It is Consonant");
+       }
