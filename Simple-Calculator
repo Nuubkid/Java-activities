@@ -1,0 +1,40 @@
+ 
+ private void addActionPerformed(java.awt.event.ActionEvent evt) {                                    
+    int num1 = Integer.parseInt(this.textfield1.getText());
+    int num2 = Integer.parseInt(this.textfield2.getText());
+    
+    int answer = num1+num2;
+    
+    this.textfield3.setText(String.valueOf(answer));
+  
+    }                                   
+
+    private void subActionPerformed(java.awt.event.ActionEvent evt) {                                    
+    int num1 = Integer.parseInt(this.textfield1.getText());
+    int num2 = Integer.parseInt(this.textfield2.getText());
+    
+    int answer = num1-num2;//change nyo lang kong ano function 
+    
+    this.textfield3.setText(String.valueOf(answer));
+       
+    }                                   
+
+    private void multiplyActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    int num1 = Integer.parseInt(this.textfield1.getText());
+    int num2 = Integer.parseInt(this.textfield2.getText());
+    
+    int answer = num1*num2;//change nyo lang kong ano function 
+    
+    this.textfield3.setText(String.valueOf(answer));
+       
+    }                                        
+
+    private void divideActionPerformed(java.awt.event.ActionEvent evt) {                                       
+    int num1 = Integer.parseInt(this.textfield1.getText());
+    int num2 = Integer.parseInt(this.textfield2.getText());
+    
+    int answer = num1/num2;//change nyo lang kong ano function 
+    
+    this.textfield3.setText(String.valueOf(answer));
+       
+    }                            
