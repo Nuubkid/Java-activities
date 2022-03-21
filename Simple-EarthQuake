@@ -1,0 +1,15 @@
+ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+      double input = Double.parseDouble(textfield1.getText());
+      
+      if(input <=5){
+      this.textfield2.setText("Little or No Damge");
+      } else if((input > 5)&&(input <= 5.5)){
+       this.textfield2.setText("Some Damage");
+      } else if((input > 5.6)&&(input <=6.5)){
+       this.textfield2.setText("Serious Damage");
+      } else if((input >6.5)&& (input<=7.5)){
+       this.textfield2.setText("Disaster");
+      }else if(input > 7.6) {
+          this.textfield2.setText("Catastrope");
+    
+    }
