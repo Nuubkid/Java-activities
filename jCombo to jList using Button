@@ -1,0 +1,22 @@
+public starbuks() {
+        initComponents();
+        myComboBox.addItem("  Cheese Tempura");
+        myComboBox.addItem("  Ceasar's Salad");
+        myComboBox.addItem("  Cajun Burger ");
+        myComboBox.addItem("  Citrus Pork");
+        myComboBox.addItem("  Burger Steak");
+        myComboBox.addItem("  Cafe Mocha");
+        myComboBox.addItem("  Cafe Latte");
+        myComboBox.addItem("  Cappiccino");
+        myComboBox.addItem("  Steamed Milk");
+        myComboBox.addItem("  Espresso");
+        myComboBox.addItem("  Brewed Coffee");
+   }
+    
+    ======button code=====
+   DefaultListModel items = new DefaultListModel();
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        items.addElement(myComboBox.getSelectedItem());
+     list.setModel(items);
+    }                                        
+    
