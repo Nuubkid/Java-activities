@@ -1,0 +1,15 @@
+ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    DefaultListModel number1 = new DefaultListModel();
+    DefaultListModel number2 = new DefaultListModel();
+        int i,j;
+       for(i = 1;i<=5;i++){
+       number1.addElement(" "+ i);
+       this.jList1.setModel(number1);
+       }
+       
+       for(j = 5; j>=1;j--){
+       number2.addElement(" "+ j);
+       this.jList2.setModel(number2);
+       
+       }
+    }          
