@@ -1,0 +1,8 @@
+ DefaultListModel number =new DefaultListModel();
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+      int n;
+      for(n=3; n<=27; n+=3){
+      number.addElement(" "+ n);
+      this.jList.setModel(number);
+      
+      }
