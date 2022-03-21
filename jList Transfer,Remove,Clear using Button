@@ -1,0 +1,38 @@
+  DefaultListModel mylist1 = new DefaultListModel();
+     DefaultListModel mylist2 = new DefaultListModel();
+    
+     String [] strlDArray = {"Iced Coffe","Iced Cappucinno","Iced Mocha","Iced Latte","Iced Tea","Iced Chocolate",
+     "Grilled Eggplant","Grilled Ham","Grilled Beef"};
+    public transfer_clear_close() {
+        initComponents();
+       for(int i =0;i < strlDArray.length; i++){
+       
+       mylist1.addElement(strlDArray[i]);
+       list1.setModel(mylist1);
+       
+       }
+           
+         //  transfer code inside button 
+
+ private void transferActionPerformed(java.awt.event.ActionEvent evt) {                                         
+      List  lists = list1.getSelectedValuesList();
+      int SelectedIndices[] = list1.getSelectedIndices();
+      Object se[] =lists.toArray();
+              
+              
+      for(int i= 0 ;i < lists.size();i++){
+       mylist2.addElement(se[i]);
+      }
+        mylist1.removeElement(list1.getSelectedValue());
+        list2.setModel(mylist2);
+    }    
+    
+    //for clear 
+    
+      private void clearActionPerformed(java.awt.event.ActionEvent evt) {                                      
+       mylist2.removeAllElements();
+    }          
+   // for close
+     private void closeActionPerformed(java.awt.event.ActionEvent evt) {                                      
+     System.exit(0);
+    }                                     
